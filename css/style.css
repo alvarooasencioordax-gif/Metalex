@@ -237,6 +237,10 @@ p {
     display:none;
 }
 
+.movile {
+    display:none;
+}
+
 /* ... (Todo tu CSS de escritorio se queda igual) ... */
 
 @media (max-width: 768px) {
@@ -295,13 +299,30 @@ p {
         display: none; /* Quitamos la tarjeta y el contacto arriba */
     }
 
-    /* Ajuste del Hero y H1 en móvil */
+    /* --- AJUSTES DEL HERO: H1, P y CTA ALINEADOS A LA IZQUIERDA --- */
+    
+    #hero {
+        align-items: flex-start; /* Empuja el contenido a la izquierda si usa flexbox */
+        text-align: left;
+        padding: 0 20px; /* Añade margen lateral para que respire en el móvil */
+    }
+
     #hero h1 {
+        text-align: left;
         margin-top: 0;
-        font-size: 40px; /* Tamaño reducido para móvil */
+        font-size: 34px; 
         line-height: 1.1;
-        margin-left: 10px;
-        margin-right: 10px;
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%; /* Obliga a usar todo el ancho para respetar la izquierda */
+    }
+
+    #hero p {
+        text-align: left;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 15px; /* Separación con el h1 */
+        width: 100%;
     }
 
     h1 span {
@@ -309,13 +330,19 @@ p {
     }
 
     .hero-cta {
-        flex-direction: row; /* Mantenemos los botones en línea o column según prefieras */
+        display: flex;
+        flex-direction: row; 
+        justify-content: flex-start; /* Pega los botones a la izquierda */
         gap: 15px;
+        width: 100%;
+        margin-top: 25px; /* Espacio para separar los botones del párrafo */
     }
 
+    /* --- ICONOS DE REDES INFERIORES (Se mantienen centrados) --- */
+    
     .container-btns {
         position: relative;
-        bottom: -120px;
+        bottom: -95px;
         right: auto;
         margin-top: 50px;
         justify-content: center;
@@ -325,6 +352,10 @@ p {
     .btn {
         width: 40px;
         height: 40px;
+    }
+
+    .desktop {
+        display:none;
     }
 
 }
