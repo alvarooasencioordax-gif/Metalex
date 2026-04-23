@@ -33,6 +33,9 @@ header {
 #logo {
     justify-self: start; 
     text-decoration: none;
+    height: auto;
+    width: 200px;
+    padding: 0;
 }
 
 #nav-bar {
