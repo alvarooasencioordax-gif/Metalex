@@ -300,6 +300,8 @@ p {
         margin-top: 0;
         font-size: 40px; /* Tamaño reducido para móvil */
         line-height: 1.1;
+        margin-left: 10px;
+        margin-right: 10px;
     }
 
     h1 span {
@@ -313,7 +315,7 @@ p {
 
     .container-btns {
         position: relative;
-        bottom: -140px;
+        bottom: -120px;
         right: auto;
         margin-top: 50px;
         justify-content: center;
