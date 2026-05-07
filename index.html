@@ -1,71 +1,199 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet"> 
-    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Carpintería Metálica Metalex — estructuras, rejas, puertas y acabados en metal con más de 15 años de experiencia en San Fernando.">
+  <title>Metalex — Carpintería Metálica</title>
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-   <header>
-        <img id="logo" src="/img/logo.png">
-        <div class="toggle-btn">
-            <i class="fa-solid fa-bars-staggered"></i>
+
+  <div class="hero-backdrop" aria-hidden="true"></div>
+
+  <div class="site-wrapper">
+
+    <!-- ─── HEADER ─────────────────────────────────────── -->
+    <header id="header">
+      <a  href="index.html" aria-label="Inicio Forja Viva">
+       <img class="logo-link" src="/img/logo.png">
+      </a>
+
+      <button class="toggle-btn" id="toggle-btn" aria-label="Abrir menú" aria-expanded="false">
+        <i class="fa-solid fa-bars-staggered"></i>
+      </button>
+
+      <nav id="nav-bar" role="navigation" aria-label="Navegación principal">
+        <ul>
+          <li><a href="index.html" class="active">Inicio</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="galeria.html">Galería</a></li>
+          <li><a href="#contacto" class="nav-cta">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- ─── HERO ───────────────────────────────────────── -->
+    <section id="hero">
+      <div class="hero-label">
+        <span></span>
+        Más de 15 años de experiencia
+      </div>
+
+      <h1>
+        La Excelencia<br>
+        del Metal en
+        cada <span>Detalle</span>
+      </h1>
+
+      <p class="hero-sub">
+        Estructuras, rejas, puertas y acabados a medida.
+        Máxima resistencia con acabados impecables.
+      </p>
+
+      <div class="hero-actions">
+        <a class="btn-primary" href="#contacto">
+          <i class="fa-solid fa-comments"></i>
+          ¡Hablamos!
+        </a>
+        <a class="btn-ghost" href="https://wa.me/+34678578720" target="_blank" rel="noopener">
+          <i class="fa-brands fa-whatsapp"></i>
+          WhatsApp
+        </a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat-card">
+          <div class="num">+15</div>
+          <div class="lbl">Años de exp.</div>
         </div>
-        <nav id="nav-bar">
-            <ul id="item-list">
-                <li class="items">
-                    <a href="">Inicio</a>
-                </li>
-                <li class="items">
-                    <a href="">Servicios</a>
-                </li>
-                <li class="items">
-                    <a href="">Galería</a>
-                </li>
-            </ul>
-        </nav>
-        <a id="contact" href="">Contacto</a>
-   </header>
-   <section id="hero">
-            <h1>La Excelencia del Metal <br class="desktop">en Cada <br class="movile"><span>Detalle</h1>
-            <p>Máxima resistencia con acabados impecables</p>
-            <div class="hero-cta">
-                <a id="hero-btn-contact" href="">¡Hablamos!</a>
-                <a class="btn" href="https://wa.me/+34678578720">
-                    <i class="fa-brands fa-whatsapp"></i>
-                </a>
-            </div>
-            <div class="container-btns">
-                <a class="btn" href="https://wa.me/+34678578720">
-                    <i class="fa-solid fa-envelope"></i>
-                </a>
-                <a class="btn" href="https://wa.me/+34678578720">
-                    <i class="fa-brands fa-facebook"></i>
-                </a>
-                <a class="btn" href="https://wa.me/+34678578720">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>   
-            </div>
-            <div class="glass-card">
-                <h2 class="hl-card">+15 Años</h2>
-                <span class="description">De experiencia en el sector.</span>
-            </div>
-   </section>
+        <div class="stat-card">
+          <div class="num">+500</div>
+          <div class="lbl">Proyectos</div>
+        </div>
+        <div class="stat-card">
+          <div class="num">100%</div>
+          <div class="lbl">A medida</div>
+        </div>
+        <div class="stat-card">
+          <div class="num">24h</div>
+          <div class="lbl">Respuesta</div>
+        </div>
+      </div>
+    </section>
 
-   <script>
-        const toggleBtn = document.querySelector('.toggle-btn');
-        const navBar = document.querySelector('#nav-bar');
+    <!-- ─── SERVICIOS ──────────────────────────────────── -->
+    <section id="servicios">
+      <div class="section-header">
+        <span class="section-label">Lo que hacemos</span>
+        <h2>Nuestros Servicios</h2>
+        <p>Cada pieza fabricada con precisión, desde el diseño hasta la instalación.</p>
+      </div>
 
-        toggleBtn.addEventListener('click', () => {
-        navBar.classList.toggle('active');
-        });
-    </script>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon" aria-hidden="true">
+            <i class="fa-solid fa-dungeon"></i>
+          </div>
+          <h3>Puertas & Portones</h3>
+          <p>Puertas de entrada, portones de garaje y cancelas con diseño personalizado y acabados duraderos.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon" aria-hidden="true">
+            <i class="fa-solid fa-toolbox"></i>
+          </div>
+          <h3>Estructuras Metálicas</h3>
+          <p>Estructuras para naves, pérgolas, escaleras y forjados con materiales certificados.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon" aria-hidden="true">
+            <i class="fa-solid fa-shield"></i>
+          </div>
+          <h3>Rejas & Barandillas</h3>
+          <p>Seguridad sin sacrificar estética. Rejas de ventana, barandillas de escalera y terrazas.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon" aria-hidden="true">
+            <i class="fa-solid fa-paint-roller"></i>
+          </div>
+          <h3>Acabados & Pintura</h3>
+          <p>Tratamientos anticorrosión, pintura electrostática y galvanizado para máxima durabilidad.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── CTA / CONTACTO ─────────────────────────────── -->
+    <section id="contacto">
+      <div class="cta-card glass">
+        <h2>¿Tienes un proyecto en mente?</h2>
+        <p>Cuéntanos qué necesitas y te preparamos un presupuesto sin compromiso en menos de 24 horas.</p>
+        <div class="cta-actions">
+          <a class="btn-primary" href="https://wa.me/+34678578720" target="_blank" rel="noopener">
+            <i class="fa-brands fa-whatsapp"></i>
+            Escríbenos por WhatsApp
+          </a>
+          <a class="btn-ghost" href="mailto:info@forjaviva.es">
+            <i class="fa-solid fa-envelope"></i>
+            Enviar email
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── FOOTER ─────────────────────────────────────── -->
+    <footer>
+      <p>© 2026 <a href="index.html">Metalex</a> · Carpintería Metálica · San Fernando (Cádiz)</p>
+      <p>Teléfono de contacto · <a href="tel:+34678578720">+34 678 578 720</a></p>
+    </footer>
+
+  </div><!-- /.site-wrapper -->
+
+  <!-- ─── SOCIAL CLUSTER ─────────────────────────────── -->
+  <div class="social-cluster" aria-label="Redes sociales">
+    <a class="social-btn" href="https://wa.me/+34678578720" target="_blank" rel="noopener" aria-label="WhatsApp">
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+    <a class="social-btn" href="#" target="_blank" rel="noopener" aria-label="Facebook">
+      <i class="fa-brands fa-facebook-f"></i>
+    </a>
+    <a class="social-btn" href="#" target="_blank" rel="noopener" aria-label="Instagram">
+      <i class="fa-brands fa-instagram"></i>
+    </a>
+  </div>
+
+  <!-- ─── JS ────────────────────────────────────────────── -->
+  <script defer>
+    // Toggle menú móvil
+    const toggleBtn = document.getElementById('toggle-btn');
+    const navBar    = document.getElementById('nav-bar');
+
+    toggleBtn.addEventListener('click', () => {
+      const isOpen = navBar.classList.toggle('active');
+      toggleBtn.setAttribute('aria-expanded', isOpen);
+    });
+
+    // Cerrar menú al hacer clic en un enlace
+    navBar.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navBar.classList.remove('active');
+        toggleBtn.setAttribute('aria-expanded', false);
+      });
+    });
+
+    // Header con fondo sólido al hacer scroll
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('scrolled', window.scrollY > 40);
+    });
+  </script>
+
 </body>
 </html>
